@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestibulinho</title>
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="jp33.png" alt="" width="110px"></div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" class="active"> Home </a></li>
+            <li><a href="inscrever.html"> Increver-se</a></li>
+            <li><a href="entrar.html"> Entrar</a></li>
+            <li><a href="suporte.html"> Suporte</a></li>
+            <li><a href="cursos.html"> Cursos</a></li>
+            <li><a href="calendario.html"> Calendário</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Faça sua inscrição</h2>
+                <p class="description description-primary">Caso ainda não tenha feito sua inscrição <br>se cadastre agora no nosso site<br>
+                ou se cadastre no site da etec</p>
+                <button id="signin" class="btn btn-primary" onclick="redirecionar()">Cadastrar-se no site da Etec Adolpho Berezin</button>
+                <button id="signin" class="btn btn-primary" onclick="redirecionar2()">Cadastrar-se nosso site</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Entrar na sua Conta</h2>
+                <p class="description description-second">Insira as credenciais necessárias</p>
+                <form class="form">
+    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input placeholder="Senha" type="password" class="input" required="">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-id-card icon-modify"></i>
+                        <input placeholder="CPF do candidato" type="text" class="input" required="">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second" onclick="limparFormulario()">Entrar</button>        
+                </form>
+            </div>
+        </div>
+        <script>
+            function redirecionar() {
+    window.location.href = "https://www.vestibulinhoetec.com.br/reducao/?t=R";
+            }
+    
+           function limparFormulario() {
+            
+            var form = document.getElementById("myForm");
+            
+            form.reset();
+        }
+
+        function redirecionar2() {
+    window.location.href = "inscrever.html";
+            }
+        </script>    
+
+<script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <a href="privacidade.html" class="politica-button">Política de Privacidade</a>
+            <a href="Termos.html" class="termos-button">Termos de uso</a>
+        </div>
+        <p>&copy; 2023 Vestibulinho. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
