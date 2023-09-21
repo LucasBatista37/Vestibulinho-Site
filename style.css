@@ -97,6 +97,11 @@ nav .menu-btn i{
 
 /*section*/
 
+.coruja{
+    padding-top: -50px;
+    z-index: 2;
+}
+
 main {
     padding: 30px;
 }
