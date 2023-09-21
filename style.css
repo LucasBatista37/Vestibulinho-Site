@@ -19,6 +19,7 @@ nav{
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
     position: fixed;
+    z-index: 1000;
 }
 
 .logo{
@@ -96,6 +97,21 @@ nav .menu-btn i{
 }
 
 /*section*/
+
+.content-mapa{
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px; 
+}
+
+.mapa-titulo{
+    margin-top: 20px;
+}
+
+.saiba{
+    margin-top: 70px;
+}
 
 .coruja{
     padding-top: -50px;
@@ -217,13 +233,13 @@ footer p {
 }
 .video-container {
     position: relative;
-    max-width: 500px; 
+    max-width: 600px; 
     margin: 0 auto; 
 }
 
 .video-container video {
     width: 100%; 
-    height: 300px; 
+    height: 400px; 
     object-fit: cover; 
 }
 
