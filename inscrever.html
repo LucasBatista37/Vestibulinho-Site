@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestibulinho</title>
+    <link rel="stylesheet" href="inscrever.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> logo </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" class="active"> Home </a></li>
+            <li><a href="inscrever.html"> Increver-se</a></li>
+            <li><a href="entrar.html"> Entrar</a></li>
+            <li><a href="suporte.html"> Suporte</a></li>
+            <li><a href="cursos.html"> Cursos</a></li>
+            <li><a href="calendario.html"> Calendário</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Informações</h2>
+                <p class="description description-primary">Telefone (Capital e grande São Paulo)</p>
+                <p class="description description-primary"><strong>(11) 3471-4071</strong><br>Demais Localidades:<br>
+                    <strong>0800 772 2829</strong><br>Atendimento de ligações (humano):<br><strong>dias úteis, das 8h às 20h</strong>
+                    <br>Atendimento URA (eletrônico):<br><strong>Todos os dias, 24h</strong></p>
+                <button id="signin" class="btn btn-primary" onclick="redirecionar()">Cadastrar-se no site da Etec Adolpho Berezin</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Cadastro de Usuário</h2>
+                <p class="description description-second">Insira as credenciais necessárias</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input placeholder="Nome de Usuário" type="text" class="input" required="">
+                    </label>
+    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input placeholder="Email" type="email" class="input" required="">
+                    </label>
+    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input placeholder="Senha" type="password" class="input" required="">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-id-card icon-modify"></i>
+                        <input placeholder="CPF do candidato" type="text" class="input" required="">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second" onclick="limparFormulario()">Cadastrar-se</button>        
+                </form>
+            </div>
+        </div>
+        <script>
+            function redirecionar() {
+    window.location.href = "https://www.vestibulinhoetec.com.br/reducao/?t=R";
+            }
+    
+           function limparFormulario() {
+            
+            var form = document.getElementById("myForm");
+            
+            form.reset();
+        }
+        </script>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <a href="Politica.html" class="politica-button">Política de Privacidade</a>
+            <a href="Termos.html" class="termos-button">Termos de uso</a>
+        </div>
+        <p>&copy; 2023 Vestibulinho. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

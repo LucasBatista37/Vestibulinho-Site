@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+/*nav */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #78c5f1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: #ffde59;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #1c1c1c;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: #ffde59;
+    }
+    
+    body.no-scroll {
+    overflow: hidden;
+}
+
+}
+
+/*section*/
+
+main {
+    padding: 30px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.content iframe {
+    max-width: 100%;
+}
+
+/*Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.politica-button,
+.termos-button {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.politica-button:hover,
+.termos-button:hover {
+    background-color: #0056b3;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 920px) {
+
+}
+
+
+.we-offer {
+    padding: 2rem 7%;
+}
+
+.we-offer h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.inner-offer {
+    flex: 1 1 300px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 30px;
+   background-color: #fff;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+.inner-offer:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inner-offer h2 {
+    font-size: 25px;
+    margin: 1rem 0;
+}
+
+.inner-offer p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.inner-offer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+   .inner-offer button{
+    background-color: #78c5f1;
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+
+.icon-modify{
+    font-size: 50px;
+}
+
+button{
+    vertical-align: middle;
+}
+
+   </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> logo </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" class="active"> Home </a></li>
+            <li><a href="inscrever.html"> Increver-se</a></li>
+            <li><a href="entrar.html"> Entrar</a></li>
+            <li><a href="suporte.html"> Suporte</a></li>
+            <li><a href="cursos.html"> Cursos</a></li>
+            <li><a href="calendario.html"> Calendário</a></li>
+        </ul>
+    </nav>
+
+    <section class="we-offer">
+        <h1>Cursos</h1>
+        <div class="main-offer">
+            <div class="inner-offer">
+                <i class="fas fa-desktop icon-modify"></i>
+                <h2>Desenvolvimento de sistemas </h2>
+                <p>✔️Articulação dos Ensinos Médio - Técnico e Superior (AMS) <br><br>✔️Cursos Técnicos - Modalidade Online</p><br><br>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/ciencias-humanas-e-sociais-aplicadas/">Conhecer</a></button>
+
+            </div>
+
+            <div class="inner-offer">
+                <i class="fas fa-book icon-modify"></i>
+
+                <h2>Administração </h2>
+                <p>✔️Articulação dos Ensinos Médio - Técnico e Superior (AMS) 
+                    <br><br>✔️Cursos Técnicos - Modalidade Aberta 
+                    <br><br>✔️Cursos Técnicos - Modalidade Online 
+                  </p><br>
+                    <button class="btn1"><a href="https://www.cps.sp.gov.br/cursos-etec/administracao/">Conhecer</a></button>
+
+            </div>
+
+            <div class="inner-offer">
+                <i class="fas fa-user-nurse icon-modify"></i>
+                <h2>Enfermagem</h2>
+                <p>✔️Cursos Técnicos - Modalidade Presencial</p>
+                <button><a href="https://www.cps.sp.gov.br/cursos-etec/enfermagem/">Conhecer</a></button>
+
+            </div>
+
+            <div class="inner-offer">
+                <i class="fas fa-building icon-modify"></i>
+                <h2>Edificações</h2>
+                <p>✔️Cursos Técnicos - Modalidade Presencial<br><br>
+                    ✔️Ensino Médio integrado ao técnico (M-Tec)<br><br>
+                    ✔️ Ensino Médio integrado ao técnico em período integral (M-Tec-PI)
+                    </p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/edificacoes/">Conhecer</a></button>
+            </div>
+
+            <div class="inner-offer">
+                <i class="fas fa-bus icon-modify"></i>
+                <h2>Turismo Receptivo</h2>
+                <p> ✔️Cursos Técnicos - Modalidade Presencial</p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/turismo-receptivo/">Conhecer</a></button>
+
+            </div>
+
+            <div class="inner-offer">
+                <i class="fas fa-desktop icon-modify"></i>
+
+                <h2>Informática</h2>
+                <p>✔️Cursos Técnicos - Modalidade Presencial<br><br> ✔️Ensino Médio integrado ao técnico (M-Tec) <br><br>✔️Ensino Médio integrado ao técnico em período integral (M-Tec-PI)</p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/informatica/">Conhecer</a></button>
+
+            </div>
+            <div class="inner-offer">
+                <i class="fas fa-calculator icon-modify"></i>
+
+                <h2>Exatas</h2>
+                <p>✔️Ensino Médio</p>
+                    <button><a href="#">Conhecer</a></button>
+
+            </div>
+            <div class="inner-offer">
+                <i class="fa fa-comments icon-modify"></i>
+
+                <h2>Linguagens</h2>
+                <p>✔️Ensino Médio</p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/linguagens-e-suas-tecnologias/">Conhecer</a></button>
+            </div>
+            <div class="inner-offer">
+                <i class="fa fa-user icon-modify"></i>
+
+                <h2>Ciências Humanas</h2>
+                <p>✔️Ensino Médio</p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/ciencias-humanas-e-sociais-aplicadas/">Conhecer</a></button>
+            </div>
+            <div class="inner-offer">
+                <i class="fa fa-percent icon-modify"></i>
+
+                <h2>Matemática e suas Tecnologias</h2>
+                <p>✔️Ensino Médio</p>
+                    <button><a href="https://www.cps.sp.gov.br/cursos-etec/matematica-e-suas-tecnologias/">Conhecer</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="Politica.html" class="politica-button">Política de Privacidade</a>
+            <a href="Termos.html" class="termos-button">Termos de uso</a>
+        </div>
+        <p>&copy; 2023 Vestibulinho. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

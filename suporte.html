@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="suporte.css">
+    <title>Divulgação Vestibulinho</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> logo </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" class="active"> Home </a></li>
+            <li><a href="inscrever.html"> Increver-se</a></li>
+            <li><a href="entrar.html"> Entrar</a></li>
+            <li><a href="suporte.html"> Suporte</a></li>
+            <li><a href="cursos.html"> Cursos</a></li>
+            <li><a href="calendario.html"> Calendário</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <div class="content first-content">
+        <div class="first-column">
+            <h2 class="title title-primary">Central de informações</h2>
+            <p class="description description-primary">Telefone(Capital e grande São Paulo)</p>
+            <p class="description description-primary"><strong>(11) 3471-4071</strong><br>Demais Localidades:<br>
+                <strong>0800 772 2829</strong><br>Atendimento de ligações (humano):<br><strong>dias úteis, das 8h às 20h</strong>
+                <br>Atendimento URA (eletrônico):<br><strong>Todos os dias, 24h</strong></p>
+            <button id="signin" class="btn btn-primary" onclick="redirecionar()">Enviar Mensagem no site da ETEC</button>
+        </div>    
+        <div class="second-column">
+            <h2 class="title title-second">Enviar Mensagem ao Suporte</h2>
+            <p class="description description-second">Insira as credenciais necessárias</p>
+            <form class="form">
+                <label class="label-input" for="">
+                    <i class="far fa-user icon-modify"></i>
+                    <input placeholder="Nome de Usuário" type="text" class="input" required="">
+                </label>
+
+                
+                <label class="label-input" for="">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input placeholder="Email" type="email" class="input" required="">
+                </label>
+                
+                <label class="label-input" for="">
+                    <i class="fas fa-comments icon-modify"></i>
+                    <input placeholder="Mensagem" type="text" class="input" required="">
+                </label>
+                
+                
+                <button class="btn btn-second" onclick="limparFormulario()">Enviar</button>        
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="Politica.html" class="politica-button">Política de Privacidade</a>
+            <a href="Termos.html" class="termos-button">Termos de uso</a>
+        </div>
+        <p>&copy; 2023 Vestibulinho. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function redirecionar() {
+window.location.href = "https://www.vestibulinhoetec.com.br/fale-conosco/";
+        }
+
+       function limparFormulario() {
+        
+        var form = document.getElementById("myForm");
+        
+        form.reset();
+    }
+    </script>
+</body>
+</html>
