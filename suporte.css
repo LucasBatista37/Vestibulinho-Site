@@ -18,7 +18,8 @@ nav{
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
 }
 
 .logo{
@@ -130,7 +131,7 @@ body {
 .content::before {
     content: "";
     position: absolute;
-    background-color: #78C5F1; /* Trocando a cor verde por azul */
+    background-color: #78C5F1; 
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -146,7 +147,7 @@ body {
     color: #fff;
 }
 .title-second {
-    color: #78C5F1; /* Trocando a cor verde por azul */
+    color: #78C5F1; 
 }
 .description {
     font-size: 14px;
@@ -340,7 +341,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }

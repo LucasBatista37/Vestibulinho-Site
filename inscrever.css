@@ -18,7 +18,8 @@ nav{
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
 }
 
 .logo{
@@ -341,7 +342,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -373,3 +374,6 @@ footer p {
 @media screen and (max-width: 920px) {
 
 }
+
+
+

@@ -19,6 +19,7 @@ nav{
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
     position: fixed;
+    text-align: center;
 }
 
 .logo{
@@ -29,7 +30,6 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 10px;
 }
 
 nav ul li{
@@ -96,6 +96,7 @@ nav .menu-btn i{
 }
 
 }
+
 /*section*/
 
 main {

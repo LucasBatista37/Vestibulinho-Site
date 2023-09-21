@@ -86,7 +86,6 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 10px;
 }
 
 nav ul li{
